@@ -427,9 +427,9 @@ def humanbytes(size):
 
 async def get_shortlink(link):
 
-    url = f'{SHORT_URL}/api'
+    url = f'{tnlink.in}/api'
     params = {
-      'api': SHORT_API,
+      'api': 6d494ed043edc85e427a79544eb728d4cac0be8e,
       'url': link,
     }
     try:
