@@ -17,7 +17,7 @@ import json
 import base64
 logger = logging.getLogger(__name__)
 
-DELETE_TIME = int(environ.get('DELETE_TIME', 300)) #600 mean 10minit 😎🍕
+DELETE_TIME = int(environ.get('DELETE_TIME', 280)) #600 mean 10minit 😎🍕
 BATCH_FILES = {}
 
 @Client.on_message(filters.command("start") & filters.incoming)
