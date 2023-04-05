@@ -17,14 +17,14 @@ import json
 import base64
 logger = logging.getLogger(__name__)
 
-DELETE_TIME = int(environ.get('DELETE_TIME', 180)) #600 mean 10minit 😎🍕
+DELETE_TIME = int(environ.get('DELETE_TIME', 300)) #600 mean 10minit 😎🍕
 BATCH_FILES = {}
 
 @Client.on_message(filters.command("start") & filters.incoming)
 async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [[           
-            InlineKeyboardButton('📢 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 📢', url=f'https://t.me/Movies_X_Animes')
+            InlineKeyboardButton('📢 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 📢', url=f'https://t.me/tamil4katmos')
             ],[
             InlineKeyboardButton('ℹ️ 𝙷𝙴𝙻𝙿 ℹ️', url=f"https://t.me/{temp.U_NAME}?start=help")
             ]]
@@ -41,6 +41,9 @@ async def start(client, message):
     if len(message.command) != 2:
         buttons = [[
             InlineKeyboardButton("➕️ ADD ME TO YOUR GROUP ➕️", url=f"http://t.me/{temp.U_NAME}?startgroup=true")
+            ],[
+            InlineKeyboardButton("📢 GROUP 1 📢", url="https://t.me/+BTloleyZM1IxMzhl")
+            InlineKeyboardButton("📢 GROUP 2 📢", url="https://t.me/+4PZWTzj7K3EyZTc1")
             ],[
             InlineKeyboardButton("📢 SUPPORT 📢", url="https://t.me/tamil4ksupport")
             ],[
@@ -89,6 +92,9 @@ async def start(client, message):
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
             InlineKeyboardButton("➕️ ADD ME TO YOUR GROUP ➕️", url=f"http://t.me/{temp.U_NAME}?startgroup=true")
+            ],[
+            InlineKeyboardButton("📢 GROUP 1 📢", url="https://t.me/+BTloleyZM1IxMzhl")
+            InlineKeyboardButton("📢 GROUP 2 📢", url="https://t.me/+4PZWTzj7K3EyZTc1")
             ],[
             InlineKeyboardButton("📢 SUPPORT 📢", url="https://t.me/tamil4ksupport")
             ],[
@@ -248,7 +254,7 @@ async def start(client, message):
         caption=f_caption,
         protect_content=True if pre == 'filep' else False,
         )
-    await message.reply_text(f'‼️ File will auto delete in 2 minutes😱\n💡Forward it to saved massages or anywhere before downloading.😁\n😇Join @tamil4katmos')
+    await message.reply_text(f'‼️ File will auto delete in 5 minutes😱\n💡Forward it to saved massages or anywhere before downloading.😁\n😇Join @tamil4katmos')
     await asyncio.sleep(DELETE_TIME) #kya karu o lady's ooo kya karu o lady's me to aadat se majbur 😉
     await mxa.delete()
                     
