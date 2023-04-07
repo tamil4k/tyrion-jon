@@ -24,9 +24,10 @@ BATCH_FILES = {}
 async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [[           
-            InlineKeyboardButton('📢 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 📢', url=f'https://t.me/tamil4katmos')
+            InlineKeyboardButton('📢 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 📢', url=f'https://t.me/tamil4katmos'),
+            InlineKeyboardButton('😇 movie search group 😇', url='https://t.me/+BTloleyZM1IxMzhl')
             ],[
-            InlineKeyboardButton('ℹ️ 𝙷𝙴𝙻𝙿 ℹ️', url=f"https://t.me/{temp.U_NAME}?start=help")
+            InlineKeyboardButton("🔍 𝚂𝙴𝙰𝚁𝙲𝙷 🔍", callback_data="search")
             ]]
         await message.reply(START_MESSAGE.format(user=message.from_user.mention if message.from_user else message.chat.title, bot=temp.B_LINK), reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)                    
         await asyncio.sleep(2) 
@@ -47,6 +48,7 @@ async def start(client, message):
             ],[
             InlineKeyboardButton("📢 SUPPORT 📢", url="https://t.me/tamil4ksupport")
             ],[
+            InlineKeyboardButton("🔍 𝚂𝙴𝙰𝚁𝙲𝙷 🔍", callback_data="search"),
             InlineKeyboardButton("💫 ABOUT 💫", callback_data="about")
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
