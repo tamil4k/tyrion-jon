@@ -121,7 +121,7 @@ async def auto_filter(client, msg, spoll=False):
 
     if SHORT_URL and SHORT_API:          
         if settings["button"]:
-            btn = [[
+            btn = [
                 InlineKeyboardButton('📢 SUPPORT 📢', url=f'https://t.me/tamil4katmos'),
                 InlineKeyboardButton('📢 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 📢', url=f'https://t.me/Dany4k_Linkzz'),
                 InlineKeyboardButton('📢 VIVDISK 📢', url=f'https://t.me/+gJJtjXHUYA1lOTg9')
@@ -130,7 +130,7 @@ async def auto_filter(client, msg, spoll=False):
                 ],[
                 InlineKeyboardButton('⚠️HOW TO DOWNLOAD⚠️', url=f'https://t.me/+gJJtjXHUYA1lOTg9')]
         else:
-            btn = [[
+            btn = [
                 InlineKeyboardButton('📢 SUPPORT 📢', url=f'https://t.me/tamil4katmos'),
                 InlineKeyboardButton('📢 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 📢', url=f'https://t.me/Dany4k_Linkzz'),
                 InlineKeyboardButton('📢 VIVDISK 📢', url=f'https://t.me/+gJJtjXHUYA1lOTg9')
