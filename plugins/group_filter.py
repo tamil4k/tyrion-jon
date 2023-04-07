@@ -127,7 +127,7 @@ async def auto_filter(client, msg, spoll=False):
                 InlineKeyboardButton('📢 VIVDISK 📢', url=f'https://t.me/+gJJtjXHUYA1lOTg9')
                 ],[[
                 InlineKeyboardButton(text=f"[{get_size(file.file_size)}] {file.file_name}", url=await get_shortlink(f"https://telegram.dog/{temp.U_NAME}?start=pre_{file.file_id}"))] for file in files
-                ]],[
+                ],[
                 InlineKeyboardButton('⚠️HOW TO DOWNLOAD⚠️', url=f'https://t.me/+gJJtjXHUYA1lOTg9')]]
         else:
             btn = [[
