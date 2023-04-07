@@ -581,6 +581,18 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InputMediaPhoto(random.choice(PICS), script.ABOUT_TXT.format(temp.B_NAME), enums.ParseMode.HTML),
             reply_markup=reply_markup,           
         )
+    elif query.data == "search":
+        buttons= [[
+            InlineKeyboardButton('😇 Movie request group 😇', url='https://t.me/+BTloleyZM1IxMzhl')
+            ],[
+            InlineKeyboardButton('🏠 𝙷𝙾𝙼𝙴 🏠', callback_data='start'),
+            InlineKeyboardButton('🔐 𝙲𝙻𝙾𝚂𝙴 🔐', callback_data='close_data')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)        
+        await query.edit_message_media(
+            InputMediaPhoto(random.choice(PICS), script.SEARCH_TXT.format(temp.B_NAME), enums.ParseMode.HTML),
+            reply_markup=reply_markup,           
+        )
     elif query.data == "source":
         buttons = [[
             InlineKeyboardButton('SOURCE CODE', url='https://te.legra.ph/file/42e9a66c3df08a9c1987a.mp4')
