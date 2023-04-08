@@ -597,6 +597,26 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InputMediaPhoto(random.choice(PICS), script.SOURCE_TXT, enums.ParseMode.HTML),
             reply_markup=reply_markup,            
         )
+    elif query.data == "morefromus":
+        buttons = [[
+            InlineKeyboardButton('PREMIUM NO ADS', url='https://tamil4katmos.rpy.club/g/N5FUtZE2Ly')
+            ],[            
+            InlineKeyboardButton('ONLY ENGLISH', url='https://t.me/+TkChTWQf46diMjg1'),
+            InlineKeyboardButton('DRIVE LINKS', url='https://t.me/+TkChTWQf46diMjg1')
+            ],[            
+            InlineKeyboardButton('DUBBED', url='https://t.me/+x_4LOjEflNs1NDg1'),
+            InlineKeyboardButton('WEBSERIES', url='https://t.me/+3fMkhmjwwwBkMGE1')
+            ],[
+            InlineKeyboardButton('FLIMOGRAPHY', url='https://t.me/+x_4LOjEflNs1NDg'),
+            InlineKeyboardButton('ADULT 18+', url='https://t.me/+KnmINugz7IhjZGM1')
+            ],[
+            InlineKeyboardButton('👩‍🦯 Back', callback_data='about')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.edit_message_media(
+            InputMediaPhoto(random.choice(PICS), script.MORE_FROM_US, enums.ParseMode.HTML),
+            reply_markup=reply_markup,            
+        )
     elif query.data == "restric":
         buttons = [[
             InlineKeyboardButton('𝙱𝙰𝙲𝙺', callback_data='help')
