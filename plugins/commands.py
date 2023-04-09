@@ -44,7 +44,7 @@ async def start(client, message):
             InlineKeyboardButton("➕️ ADD ME TO YOUR GROUP ➕️", url=f"http://t.me/{temp.U_NAME}?startgroup=true")
             ],[
             InlineKeyboardButton("🔍 𝚂𝙴𝙰𝚁𝙲𝙷 🔍", callback_data="search"),
-            InlineKeyboardButton("📢 REQUEST 📢", url="https://t.me/+BTloleyZM1IxMzhl")
+            InlineKeyboardButton("📢 REQUEST 📢", callback_data='request')
             ],[
             InlineKeyboardButton("MORE FROM US", callback_data="morefromus")
             ],[
@@ -96,7 +96,7 @@ async def start(client, message):
             InlineKeyboardButton("➕️ ADD ME TO YOUR GROUP ➕️", url=f"http://t.me/{temp.U_NAME}?startgroup=true")
             ],[
             InlineKeyboardButton("🔍 𝚂𝙴𝙰𝚁𝙲𝙷 🔍", callback_data="search"),
-            InlineKeyboardButton("📢 REQUEST 📢", url="https://t.me/+BTloleyZM1IxMzhl")
+            InlineKeyboardButton("📢 REQUEST 📢", callback_data='request')
             ],[
             InlineKeyboardButton("MORE FROM US", callback_data="morefromus")
             ],[
