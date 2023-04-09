@@ -578,7 +578,22 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "search":
         buttons= [[
-            InlineKeyboardButton('😇 Movie request group 😇', url='https://t.me/+BTloleyZM1IxMzhl')
+            InlineKeyboardButton('😇 Movie request group 😇', callback_data='request')
+            ],[
+            InlineKeyboardButton('🏠 𝙷𝙾𝙼𝙴 🏠', callback_data='start'),
+            InlineKeyboardButton('🔐 𝙲𝙻𝙾𝚂𝙴 🔐', callback_data='close_data')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)        
+        await query.edit_message_media(
+            InputMediaPhoto(random.choice(PICS), script.SEARCH_TXT.format(temp.B_NAME), enums.ParseMode.HTML),
+            reply_markup=reply_markup,           
+        )
+    elif query.data == "request":
+        buttons= [[
+            InlineKeyboardButton('😇 TNLINK 😇', url='https://t.me/+BTloleyZM1IxMzhl'),
+            InlineKeyboardButton('😇 VIVDISK 😇', url='https://t.me/+BTloleyZM1IxMzhl')
+            ],[
+            InlineKeyboardButton('😇 FOR SERIES 😇', url='https://t.me/+BTloleyZM1IxMzhl')
             ],[
             InlineKeyboardButton('🏠 𝙷𝙾𝙼𝙴 🏠', callback_data='start'),
             InlineKeyboardButton('🔐 𝙲𝙻𝙾𝚂𝙴 🔐', callback_data='close_data')
