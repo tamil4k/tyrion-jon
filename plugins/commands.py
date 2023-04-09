@@ -24,10 +24,10 @@ BATCH_FILES = {}
 async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [[
-            InlineKeyboardButton("🔍 𝚂𝙴𝙰𝚁𝙲𝙷 🔍", callback_data="search"),
-            InlineKeyboardButton('📢 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 📢', url=f'https://t.me/tamil4katmos')
+            InlineKeyboardButton("🔍 SEARCH 🔍", callback_data="search"),
+            InlineKeyboardButton('📢 CHANNEL 📢', url=f'https://t.me/tamil4katmos')
             ],[
-            InlineKeyboardButton('😇 movie search group 😇', url='https://t.me/+BTloleyZM1IxMzhl')
+            InlineKeyboardButton('😇 mMovie / Series Request 😇', callback_data='request')
             ]]
         await message.reply(START_MESSAGE.format(user=message.from_user.mention if message.from_user else message.chat.title, bot=temp.B_LINK), reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)                    
         await asyncio.sleep(2) 
