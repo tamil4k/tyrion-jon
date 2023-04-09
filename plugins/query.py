@@ -523,7 +523,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton("➕️ ADD ME TO YOUR GROUP ➕️", url=f"http://t.me/{temp.U_NAME}?startgroup=true")
             ],[
             InlineKeyboardButton("🔍 𝚂𝙴𝙰𝚁𝙲𝙷 🔍", callback_data="search"),
-            InlineKeyboardButton("📢 REQUEST 📢", url="https://t.me/+BTloleyZM1IxMzhl")
+            InlineKeyboardButton("📢 REQUEST 📢", callback_data='request')
             ],[
             InlineKeyboardButton("MORE FROM US", callback_data="morefromus")
             ],[
@@ -578,7 +578,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "search":
         buttons= [[
-            InlineKeyboardButton('😇 Movie request group 😇', callback_data='request')
+            InlineKeyboardButton('😇 Movie / Series Request 😇', callback_data='request')
             ],[
             InlineKeyboardButton('🏠 𝙷𝙾𝙼𝙴 🏠', callback_data='start'),
             InlineKeyboardButton('🔐 𝙲𝙻𝙾𝚂𝙴 🔐', callback_data='close_data')
@@ -591,9 +591,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "request":
         buttons= [[
             InlineKeyboardButton('😇 TNLINK 😇', url='https://t.me/+BTloleyZM1IxMzhl'),
-            InlineKeyboardButton('😇 VIVDISK 😇', url='https://t.me/+BTloleyZM1IxMzhl')
+            InlineKeyboardButton('😇 VIVDISK 😇', url='https://t.me/+gJJtjXHUYA1lOTg9')
             ],[
-            InlineKeyboardButton('😇 FOR SERIES 😇', url='https://t.me/+BTloleyZM1IxMzhl')
+            InlineKeyboardButton('😇 FOR SERIES 😇', url='https://t.me/+RQUTiAKF7JZlN2Y1')
             ],[
             InlineKeyboardButton('🏠 𝙷𝙾𝙼𝙴 🏠', callback_data='start'),
             InlineKeyboardButton('🔐 𝙲𝙻𝙾𝚂𝙴 🔐', callback_data='close_data')
