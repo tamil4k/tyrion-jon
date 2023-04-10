@@ -27,7 +27,7 @@ async def start(client, message):
             InlineKeyboardButton("🔍 SEARCH 🔍", callback_data="search"),
             InlineKeyboardButton('📢 CHANNEL 📢', url=f'https://t.me/tamil4katmos')
             ],[
-            InlineKeyboardButton('😇 mMovie / Series Request 😇', callback_data='request')
+            InlineKeyboardButton('😇 Movie / Series Request 😇', callback_data='request')
             ]]
         await message.reply(START_MESSAGE.format(user=message.from_user.mention if message.from_user else message.chat.title, bot=temp.B_LINK), reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)                    
         await asyncio.sleep(2) 
