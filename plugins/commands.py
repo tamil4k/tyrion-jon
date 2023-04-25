@@ -529,7 +529,7 @@ async def send_chatmsg(bot, message):
         except Exception as e:
             await message.reply_text(f"<b>Eʀʀᴏʀ :- <code>{e}</code></b>")
         if success:
-            await message.reply_text(f"<b>Yᴏᴜʀ Mᴇssᴀɢᴇ Hᴀs Bᴇᴇɴ Sᴜᴄᴇssғᴜʟʟʏ Sᴇɴᴅ To {chat.id}.</b>")
+            await message.reply_text(f"<b>Yᴏᴜʀ Mᴇssᴀɢᴇ Hᴀs Bᴇᴇɴ Sᴜᴄᴇssғᴜʟʟʏ. Sᴇɴᴅ To {chat.id}.</b>")
         else:
             await message.reply_text("<b>Aɴ Eʀʀᴏʀ Oᴄᴄᴜʀʀᴇᴅ !</b>")
     else:
