@@ -25,7 +25,7 @@ async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [[
             InlineKeyboardButton("🔍 SEARCH 🔍", callback_data="search"),
-            InlineKeyboardButton('📢 CHANNEL 📢', url=f'https://t.me/tamil4katmos')
+            InlineKeyboardButton('📢 CHANNEL 📢', url=f'https://t.me/rubanencodes')
             ],[
             InlineKeyboardButton('😇 Movie / Series Request 😇', callback_data='request')
             ]]
@@ -48,7 +48,7 @@ async def start(client, message):
             ],[
             InlineKeyboardButton("MORE FROM US", callback_data="morefromus")
             ],[
-            InlineKeyboardButton("📢 SUPPORT 📢", url="https://t.me/tamil4ksupport"),
+            InlineKeyboardButton("📢 SUPPORT 📢", url="https://t.me/+LXnktBTvozQ3MGVl"),
             InlineKeyboardButton("💫 ABOUT 💫", callback_data="about")
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -100,7 +100,7 @@ async def start(client, message):
             ],[
             InlineKeyboardButton("MORE FROM US", callback_data="morefromus")
             ],[
-            InlineKeyboardButton("📢 SUPPORT 📢", url="https://t.me/tamil4ksupport"),
+            InlineKeyboardButton("📢 SUPPORT 📢", url="https://t.me/+LXnktBTvozQ3MGVl"),
             InlineKeyboardButton("💫 ABOUT 💫", callback_data="about")
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
