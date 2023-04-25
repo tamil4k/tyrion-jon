@@ -527,7 +527,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ],[
             InlineKeyboardButton("MORE FROM US", callback_data="morefromus")
             ],[
-            InlineKeyboardButton("📢 SUPPORT 📢", url="https://t.me/tamil4ksupport"),
+            InlineKeyboardButton("📢 SUPPORT 📢", url="https://t.me/+LXnktBTvozQ3MGVl"),
             InlineKeyboardButton("💫 ABOUT 💫", callback_data="about")
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -590,10 +590,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "request":
         buttons= [[
-            InlineKeyboardButton('😇 TNLINK 😇', url='https://t.me/+BTloleyZM1IxMzhl'),
-            InlineKeyboardButton('😇 VIVDISK 😇', url='https://t.me/+gJJtjXHUYA1lOTg9')
+            InlineKeyboardButton('😇 TNLINK 😇', url='https://t.me/+BTloleyZM1IxMzhl')
             ],[
-            InlineKeyboardButton('😇 FOR SERIES 😇', url='https://t.me/+RQUTiAKF7JZlN2Y1')
+            InlineKeyboardButton('😇 FOR SERIES 😇', url='https://t.me/+3fMkhmjwwwBkMGE1')
             ],[
             InlineKeyboardButton('🏠 𝙷𝙾𝙼𝙴 🏠', callback_data='start'),
             InlineKeyboardButton('🔐 𝙲𝙻𝙾𝚂𝙴 🔐', callback_data='close_data')
@@ -618,14 +617,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('PREMIUM NO ADS', url='https://tamil4katmos.rpy.club/g/N5FUtZE2Ly')
             ],[            
-            InlineKeyboardButton('ONLY ENGLISH', url='https://t.me/+TkChTWQf46diMjg1'),
-            InlineKeyboardButton('DRIVE LINKS', url='https://t.me/+TkChTWQf46diMjg1')
+            InlineKeyboardButton('MOVIE REQUEST', url='https://t.me/+BTloleyZM1IxMzhl')
             ],[            
             InlineKeyboardButton('DUBBED', url='https://t.me/+x_4LOjEflNs1NDg1'),
             InlineKeyboardButton('WEBSERIES', url='https://t.me/+3fMkhmjwwwBkMGE1')
-            ],[
-            InlineKeyboardButton('FLIMOGRAPHY', url='https://t.me/+x_4LOjEflNs1NDg'),
-            InlineKeyboardButton('ADULT 18+', url='https://t.me/+KnmINugz7IhjZGM1')
             ],[
             InlineKeyboardButton('👩‍🦯 Back', callback_data='start')
         ]]
